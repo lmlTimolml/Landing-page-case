@@ -122,7 +122,7 @@ input[type=text]:focus, input[type=email]:focus, input[type=tel]:focus , input[t
 }
 
 .gplusslogo {
-    background: url(img/sportsdager.png) no-repeat;
+    background: url(sportsdager.png) no-repeat;
     background-size: contain;
     background-position: center;
     width: 300px;
