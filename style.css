@@ -1,4 +1,4 @@
-html, body, div, main, section, article, aside, header, footer, nav, p, h1, h2, h3, h4, h5, h6, blockquote, address, time, span, em, strong, img, ol, ul, li {
+html, body, div, main, header, footer, p, h1, h2, h3, h4, h5,span, em, strong, img, ol, ul, li {
     margin: 0;
     padding: 0;
     border: 0;
@@ -7,8 +7,9 @@ html, body, div, main, section, article, aside, header, footer, nav, p, h1, h2, 
 
 body {
     margin: 30px;
-    background-image: linear-gradient(to top left, rgb(0, 175, 255), rgb(19, 17, 12)); /* fallback */
-    background-image: url(pluss.png), linear-gradient(to top left, rgb(21, 148, 206), rgb(0, 0, 0));
+    background-image: linear-gradient(-15deg, rgb(0, 175, 255) 80%, rgb(19, 17, 12));
+    /* fallback */
+    background-image: url(img/pluss.png), linear-gradient(-15deg, rgb(21, 148, 206) 80%, rgb(0, 0, 0));
     background-repeat: no-repeat;
     background-size: contain;
     height: 100%;
@@ -17,8 +18,8 @@ body {
 
 h1 {
     font-family: Flama, Arial, sans-serif;
-    font-size: 1.4em;
-    color: #fff;
+    font-size: 1.9em;
+    color: rgb(255, 150, 0);
     text-transform: uppercase;
     margin-bottom: 10px;
 }
@@ -29,6 +30,11 @@ h2, h3 {
     color: #fff;
     text-transform: uppercase;
     margin-bottom: 10px;
+}
+
+.mycol1 h2 {
+    text-align: center;
+    margin-bottom: 40px;
 }
 
 .modal-header h3 {
@@ -50,6 +56,11 @@ p {
     margin-bottom: 1em;
 }
 
+ul {
+    padding-left: 1em;
+    margin-bottom: 1em;
+}
+
 h1 + p {
     font-family: Flama, Arial, sans-serif;
     font-size: 1.1em;
@@ -58,20 +69,12 @@ h1 + p {
     margin-bottom: 1em;
 }
 
+span {
+    color: rgb(255, 150, 0);
+}
+
 form p {
     font-size: .8em;
-}
-
-ul {
-    padding-left: 1em;
-    margin-bottom: 1em;
-}
-
-li {
-    list-style: square;
-    font-family: Arial, sans-serif;
-    font-size: 1em;
-    color: #fff;
 }
 
 a {
@@ -89,32 +92,54 @@ p a {
     text-decoration: underline;
 }
 
+input[type=text], input[type=email], input[type=tel] {
+    box-sizing: border-box;
+    color: #000;
+    background-color: hsla(255, 100%, 100%, .75);
+    background-position: center;
+    background-repeat: no-repeat;
+    -webkit-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+}
+
+input[type=text]:focus, input[type=email]:focus, input[type=tel]:focus, input[type=text]:hover, input[type=email]:hover, input[type=tel]:hover {
+    color: #fff;
+    background-color: hsla(0, 0%, 0%, .25);
+}
+
+.gPluss {
+    height: 30px;
+    padding: 0;
+    position: absolute;
+    bottom: 5px;
+}
+
+.btn-link {
+    position: relative;
+    right: -15px;
+    bottom: -8px;
+    font-size: .85em;
+    font-weight: 600;
+    color: #fff;
+    z-index: 1;
+}
+
+.btn-link:hover {
+    color: #000;
+    text-decoration: none;
+}
+
 .invalid-feedback p {
     background: #9b0505;
     font-size: .75em;
     padding: 2px 5px;
 }
 
-.modal-body p {
+.modal-body p, .modal-body li {
     font-family: Flama, Arial, sans-serif;
     font-size: .85em;
     color: #000;
     margin-bottom: 1em;
-}
-
-input[type=text], input[type=email], input[type=tel] {
-    box-sizing: border-box;
-    color: #000;
-    background-color: hsla(255, 100%, 100%, .75);
-    background-position: center; 
-    background-repeat: no-repeat;
-    -webkit-transition: all .2s ease-in-out;
-    transition: all .2s ease-in-out;
-}
-
-input[type=text]:focus, input[type=email]:focus, input[type=tel]:focus , input[type=text]:hover, input[type=email]:hover, input[type=tel]:hover {
-    color: #fff;
-    background-color: hsla(0, 0%, 0%, .25);
 }
 
 .container {
@@ -122,7 +147,7 @@ input[type=text]:focus, input[type=email]:focus, input[type=tel]:focus , input[t
 }
 
 .gplusslogo {
-    background: url(sportsdager.png) no-repeat;
+    background: url(img/sportsdager.png) no-repeat;
     background-size: contain;
     background-position: center;
     width: 300px;
@@ -130,36 +155,130 @@ input[type=text]:focus, input[type=email]:focus, input[type=tel]:focus , input[t
     margin-bottom: 20px;
 }
 
-.mycol, .mycol1, .mycol2, .mycol3 {
+.gsportlogo {
+    background: url(img/gportlogo.svg) no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 200px;
+    height: 60px;
+}
+
+.mycol2 {
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5));
+    border-radius: .3em;
+    border: 1px solid rgb(255, 150, 0);
+    overflow: hidden;
+    padding: 1em;
+    margin-bottom: 20px;
+}
+
+.herocol {
+    position: relative;
+    border-radius: .3em;
+    border: 1px solid rgb(255, 150, 0);
+    overflow: hidden;
+    padding: 1em;
+    margin-bottom: 20px;
+}
+
+.herocol:after {
+    content: "";
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5));
+    width: inherit;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    border-radius: 5px;
+    position: absolute;
+    z-index: -1;
+}
+
+.mycol, .mycol1 {
     margin-bottom: 20px;
     overflow: hidden;
 }
 
+.mycol1 {
+    padding: 1em;
+}
+
+.mycol2 {
+    border: 1px solid rgb(0, 175, 255);
+}
+
+.gelement {
+    position: absolute;
+    background: url(img/gelement_orange.svg) no-repeat;
+    background-size: contain;
+    background-position: center;
+    bottom: -1px;
+    right: -1px;
+    width: 150px;
+    height: 81px;
+}
+
+#register .gelement {
+    position: absolute;
+    background: url(img/gelement_blue.svg) no-repeat;
+    background-size: contain;
+    background-position: center;
+    bottom: -1px;
+    right: -1px;
+    width: 150px;
+    height: 81px;
+}
+
 @media screen and (min-width: 800px) {
 
-.gplusslogo {
-    width: 500px;
-    height: 120px;
-}
-    
-    h1 + p {
-    font-family: Flama, Arial, sans-serif;
-    font-size: .9em;
-    font-weight: 600;
-    color: #fff;
-    margin-bottom: 1em;
-}
-    
-    p {
-        font-size: .85em;
+    body {
+        background-image: linear-gradient(-15deg, rgb(0, 175, 255) 50%, rgb(19, 17, 12));
+        /* fallback */
+        background-image: url(img/pluss.png), linear-gradient(-15deg, rgb(21, 148, 206) 50%, rgb(0, 0, 0));
     }
 
-li {
-    list-style: square;
-    font-family: Arial, sans-serif;
-    font-size: .85em;
-    color: #fff;
-}
+    .gplusslogo {
+        width: 500px;
+        height: 120px;
+    }
 
-    
+    li {
+        list-style: square;
+        font-family: Arial, sans-serif;
+        font-size: .85em;
+        color: #000;
+    }
+
+    .herocol {
+        margin-bottom: 40px;
+        ;
+    }
+
+    .gelement {
+        position: absolute;
+        background: url(img/gelement_orange.svg) no-repeat;
+        background-size: contain;
+        background-position: center;
+        bottom: -1px;
+        right: -1px;
+        width: 180px;
+        height: 98px;
+    }
+
+    #register .gelement {
+        position: absolute;
+        background: url(img/gelement_blue.svg) no-repeat;
+        background-size: contain;
+        background-position: center;
+        bottom: -1px;
+        right: -1px;
+        width: 180px;
+        height: 98px;
+    }
+
+    .btn-link {
+        bottom: 0px;
+        font-size: .9em;
+    }
+
+
 }

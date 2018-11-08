@@ -15,58 +15,110 @@
 
     <main class="container">
 
+        <!-- LOGO -->
 
         <header class="row justify-content-center">
             <div class="gplusslogo"></div>
         </header>
 
-
         <div class="row">
-            <!-- first row -->
-            <div class="col-sm-12 col-md-6 mycol1">
-                <h2>Se ukens medlemstilbud</h2>
-                <div class="medlemstilbud justify-content-center">
 
-                    <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <a href="https://www.gsport.no/269057-nike-hbr-hettejakke-herre?#342=45198&343=64173" target="_blank"><img class="d-block w-100" src="hbr+.png?auto=yes&text=HBR+ hettejakke herre" alt="HBR+ hettejakke herre"></a>
+            <!-- KONKURRANSE -->
+
+            <div class="col-sm-12 col-md-12 herocol">
+                <h1>Meld deg på innen 1. desember</h1>
+                <p>Meld deg på G+ Sportsdager ved å registrere deg, <span>helt gratis</span>, i vår kundeklubb <span></span>G+ innen 01/12-18 og bli med i trekningen av <span>NIKE produkter til en verdi av 10.000,–</span>
+                
+                <p>Alle som registrerer seg via registreringsskjemaet i løpet av konkurranseperioden er med i trekningen.</p>
+
+                <p>I tillegg til flotte premier gir vi deg også <span>ukentlige medlemstilbud</span> som de du ser under. <span>Spar hele 500 kr</span> på Air Zoom løpesko. De passer forresten perfekt under juletreet også …</p>
+
+                <div class="gelement"></div>
+
+                <div class="btn gPluss" a href="#" data-toggle="modal" data-target="#omGpluss">
+                    <p><span>Mer om G+</span></p>
+                </div>
+
+                <button type="button" class="btn btn-link float-right" onclick="register()">Registrer deg nå</button>
+
+                <!-- OM G+ -->
+
+                <div class="modal fade" id="omGpluss" tabindex="-1" role="dialog" aria-labelledby="about-Gplus" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h3>Hva er G+?</h3>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
                             </div>
-                            <div class="carousel-item">
-                                <a href="https://www.gsport.no/284276-nike-air-zoom-pegasus-35-shield-lopesko-dame?#342=35932&343=26934" target="_blank"><img class="d-block w-100" src="pegasus35.png?auto=yes&text=Air Zoom Pegasus 35 Shield løpesko dame" alt="Air Zoom Pegasus 35 Shield løpesko dame"></a>
+                            <div class="modal-body">
+                                <p>G+ er for alle oss som elsker sport og fritid – enten det er de gode tilbudene eller det råeste utstyret du er på jakt etter.</p>
+
+                                <ul>
+                                    <li>Velkomsttilbud: 20% rabatt på neste kjøp*</li>
+                                    <li>Du får eksklusive medlemstilbud</li>
+                                    <li>Du får de beste tilbudene først </li>
+                                    <li>Du får inspirasjon og en sniktitt på nyheter </li>
+                                    <li>Du får invitasjoner til eksklusive kundekvelder og arrangementer</li>
+                                </ul>
+
+                                <p>G+ er åpen for alle og medlemskapet er helt gratis. Vi gleder oss til å se deg i vår aktive verden!</p>
+
+                                <p>Du kan bli medlem i G+ ved å registrere deg via innmeldingsskjemaet, eller ved å sende en SMS med kodeord G+ og DIN E-POST til 2030.</p>
+                                
+                                <p>Et medlemskap i G+ gir deg rabatter på utvalgte medlemsprodukter, spennende tilbud og nyhetsbrev med informasjon, tips og råd. Du vil også få invitasjoner til temakvelder og kundekvelder og muligheten til å få en tjuvstart på tilbud før alle andre.</p>
+
+                                <p>* Gjelder ikke på gsport.no. Må benyttes innen 14 dager og gjelder ikke våpen, ammunisjon, optikk, elektronikk (inkl. elsykler) og allerede nedsatte varer. Kan ikke kombineres med andre rabatter.</p>
                             </div>
-                            <div class="carousel-item">
-                                <a href="https://www.gsport.no/269055-nike-optic-hettejakke-dame#342=47920&343=64176" target="_blank"><img class="d-block w-100" src="optic.png?auto=yes&text=Optic hettejakke dame" alt="Optic hettejakke dame"></a>
-                            </div>
-                            <div class="carousel-item">
-                                <a href="https://www.gsport.no/284277-nike-air-zoom-structure-22-shield-lopesko-herre?#342=32062&343=55921" target="_blank"><img class="d-block w-100" src="structure22.png?auto=yes&text=Air Zoom Structure 22 Shield løpesko herre" alt="Air Zoom Structure 22 Shield løpesko herre"></a>
+                            <div class="modal-footer">
+                                <button type="button" class="btn-light" data-dismiss="modal">Lukk</button>
                             </div>
                         </div>
-                        <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
+                    </div>
+                </div> <!-- modal -->
+
+            </div>
+
+            <!-- MEDLEMSTILBUD -->
+
+            <div class="col-sm-12 col-md-6 mycol1">
+                <h2>Se medlemstilbudene</h2>
+                <div class="justify-content-center">
+
+                    <div id="medlemstilbud" class="carousel slide" data-ride="carousel" data-interval="4000">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <a href="https://www.gsport.no/269057-nike-hbr-hettejakke-herre?#342=45198&343=64173" target="_blank"><img class="d-block w-100" src="img/hbr+.png?auto=yes&text=HBR+ hettejakke herre" alt="HBR+ hettejakke herre"></a>
+                            </div>
+                            <div class="carousel-item">
+                                <a href="https://www.gsport.no/284276-nike-air-zoom-pegasus-35-shield-lopesko-dame?#342=35932&343=26934" target="_blank"><img class="d-block w-100" src="img/pegasus35.png?auto=yes&text=Air Zoom Pegasus 35 Shield løpesko dame" alt="Air Zoom Pegasus 35 Shield løpesko dame"></a>
+                            </div>
+                            <div class="carousel-item">
+                                <a href="https://www.gsport.no/269055-nike-optic-hettejakke-dame#342=47920&343=64176" target="_blank"><img class="d-block w-100" src="img/optic.png?auto=yes&text=Optic hettejakke dame" alt="Optic hettejakke dame"></a>
+                            </div>
+                            <div class="carousel-item">
+                                <a href="https://www.gsport.no/284277-nike-air-zoom-structure-22-shield-lopesko-herre?#342=32062&343=55921" target="_blank"><img class="d-block w-100" src="img/structure22.png?auto=yes&text=Air Zoom Structure 22 Shield løpesko herre" alt="Air Zoom Structure 22 Shield løpesko herre"></a>
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#medlemstilbud" role="button" data-slide="prev">
                             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                             <span class="sr-only">Previous</span>
                         </a>
-                        <a class="carousel-control-next" href="#carouselExampleFade" role="button" data-slide="next">
+                        <a class="carousel-control-next" href="#medlemstilbud" role="button" data-slide="next">
                             <span class="carousel-control-next-icon" aria-hidden="true"></span>
                             <span class="sr-only">Next</span>
                         </a>
                     </div>
 
-                </div><!-- /medlemstilbud -->
+                </div>
 
             </div>
 
-            <div class="col-sm-12 col-md-6 mycol2">
-                <h1>Vinn NIKE produkter for 10.000,–</h1>
-                <p>Meld deg inn i vår kundeklubb G+ i løpet av de to neste ukene og vær med i trekningen av NIKE produkter til en verdi av 10.000,–</p>
-
-                <p>Medlemsskapet gir deg rabatter på utvalgte medlemsprodukter, spennende tilbud og nyhetsbrev med informasjon, tips og råd. Du vil også få invitasjoner til temakvelder og kundekvelder og muligheten til å få en tjuvstart på tilbud før alle andre. Og det er selvfølgelig fullstendig gratis.</p>
-
-
-            </div>
+            <!-- REGISTRERINGSSKJEMA -->
 
             <!-- form -->
-            <div class="col-sm-12 col-md-6 mycol3">
+            <div class="col-sm-12 col-md-6 mycol2" id="register">
                 <h2>Registreringsskjema</h2>
                 <p>Felt merket med * er obligatorisk.</p>
                 <form class="needs-validation" novalidate>
@@ -124,7 +176,9 @@
                                 <p>Jeg godtar <a href="#" data-toggle="modal" data-target="#medlemsvilkar">medlemsvilkårene</a>*</p>
                             </label>
 
-                            <div class="modal fade" id="medlemsvilkar" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                            <!-- MEDLEMSVILKÅR -->
+
+                            <div class="modal fade" id="medlemsvilkar" tabindex="-1" role="dialog" aria-labelledby="member-terms" aria-hidden="true">
                                 <div class="modal-dialog" role="document">
                                     <div class="modal-content">
                                         <div class="modal-header">
@@ -155,7 +209,7 @@
                                         </div>
                                     </div>
                                 </div>
-                            </div>
+                            </div> <!-- modal -->
 
                             <div class="invalid-feedback">
                                 <p>Du må godta medlemsvilkårene for å registrere deg.</p>
@@ -163,34 +217,22 @@
                         </div>
 
                     </div>
-
-                    <button class="btn-light" type="submit">Registrer deg</button>
+                    <div class="gelement"></div>
+                    <button class="btn btn-link float-right" type="submit">Registrer deg nå</button>
                 </form>
 
             </div> <!-- form -->
 
-            <div class="col-sm-12 col-md-6 mycol2">
-                <h3>HVA ER G+?</h3>
-                <p>G+ er for alle oss som elsker sport og fritid – enten det er de gode tilbudene eller det råeste utstyret du er på jakt etter.</p>
+            <div class="col-sm-12 col-md-12 mycol1">
 
-                <ul>
-                    <li>Velkomsttilbud: 20% rabatt på neste kjøp*</li>
-                    <li>Du får eksklusive medlemstilbud</li>
-                    <li>Du får de beste tilbudene først </li>
-                    <li>Du får inspirasjon og en sniktitt på nyheter </li>
-                    <li>Du får invitasjoner til eksklusive kundekvelder og arrangementer</li>
-                </ul>
-
-                <p>G+ er åpen for alle og medlemskapet er helt gratis. Vi gleder oss til å se deg i vår aktive verden og håper du melder deg inn allerede i dag.</p>
-
-                <p>Du kan bli medlem i G + ved å registrere deg via innmeldingsskjema under, eller ved å sende en SMS med kodeord G+ og DIN E-POST til 2030.</p>
-
-                <p>* Gjelder ikke på gsport.no. Må benyttes innen 14 dager og gjelder ikke våpen,ammunisjon, optikk, elektronikk (inkl. elsykler)og allerede nedsatte varer. Kan ikke kombineres med andre rabatter.</p>
+                <footer class="row justify-content-center">
+                    <div class="gsportlogo"></div>
+                </footer>
 
             </div>
 
 
-        </div> <!-- first row -->
+        </div>
 
     </main>
 
@@ -198,9 +240,7 @@
         (function() {
             'use strict';
             window.addEventListener('load', function() {
-                // Fetch all the forms we want to apply custom Bootstrap validation styles to
                 var forms = document.getElementsByClassName('needs-validation');
-                // Loop over them and prevent submission
                 var validation = Array.prototype.filter.call(forms, function(form) {
                     form.addEventListener('submit', function(event) {
                         if (form.checkValidity() === false) {
@@ -212,6 +252,13 @@
                 });
             }, false);
         })();
+
+        function register() {
+            var elmnt = document.getElementById("register");
+            elmnt.scrollIntoView({
+                behavior: "smooth"
+            });
+        }
     </script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
