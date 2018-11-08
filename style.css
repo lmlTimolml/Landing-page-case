@@ -9,7 +9,7 @@ body {
     margin: 30px;
     background-image: linear-gradient(-15deg, rgb(0, 175, 255) 80%, rgb(19, 17, 12));
     /* fallback */
-    background-image: url(img/pluss.png), linear-gradient(-15deg, rgb(21, 148, 206) 80%, rgb(0, 0, 0));
+    background-image: url(pluss.png), linear-gradient(-15deg, rgb(21, 148, 206) 80%, rgb(0, 0, 0));
     background-repeat: no-repeat;
     background-size: contain;
     height: 100%;
@@ -147,7 +147,7 @@ input[type=text]:focus, input[type=email]:focus, input[type=tel]:focus, input[ty
 }
 
 .gplusslogo {
-    background: url(img/sportsdager.png) no-repeat;
+    background: url(sportsdager.png) no-repeat;
     background-size: contain;
     background-position: center;
     width: 300px;
@@ -156,7 +156,7 @@ input[type=text]:focus, input[type=email]:focus, input[type=tel]:focus, input[ty
 }
 
 .gsportlogo {
-    background: url(img/gportlogo.svg) no-repeat;
+    background: url(gportlogo.svg) no-repeat;
     background-size: contain;
     background-position: center;
     width: 200px;
@@ -208,7 +208,7 @@ input[type=text]:focus, input[type=email]:focus, input[type=tel]:focus, input[ty
 
 .gelement {
     position: absolute;
-    background: url(img/gelement_orange.svg) no-repeat;
+    background: url(gelement_orange.svg) no-repeat;
     background-size: contain;
     background-position: center;
     bottom: -1px;
@@ -219,7 +219,7 @@ input[type=text]:focus, input[type=email]:focus, input[type=tel]:focus, input[ty
 
 #register .gelement {
     position: absolute;
-    background: url(img/gelement_blue.svg) no-repeat;
+    background: url(gelement_blue.svg) no-repeat;
     background-size: contain;
     background-position: center;
     bottom: -1px;
@@ -233,7 +233,7 @@ input[type=text]:focus, input[type=email]:focus, input[type=tel]:focus, input[ty
     body {
         background-image: linear-gradient(-15deg, rgb(0, 175, 255) 50%, rgb(19, 17, 12));
         /* fallback */
-        background-image: url(img/pluss.png), linear-gradient(-15deg, rgb(21, 148, 206) 50%, rgb(0, 0, 0));
+        background-image: url(pluss.png), linear-gradient(-15deg, rgb(21, 148, 206) 50%, rgb(0, 0, 0));
     }
 
     .gplusslogo {
@@ -255,7 +255,7 @@ input[type=text]:focus, input[type=email]:focus, input[type=tel]:focus, input[ty
 
     .gelement {
         position: absolute;
-        background: url(img/gelement_orange.svg) no-repeat;
+        background: url(gelement_orange.svg) no-repeat;
         background-size: contain;
         background-position: center;
         bottom: -1px;
@@ -266,7 +266,7 @@ input[type=text]:focus, input[type=email]:focus, input[type=tel]:focus, input[ty
 
     #register .gelement {
         position: absolute;
-        background: url(img/gelement_blue.svg) no-repeat;
+        background: url(gelement_blue.svg) no-repeat;
         background-size: contain;
         background-position: center;
         bottom: -1px;
